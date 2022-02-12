@@ -51,17 +51,11 @@ valid_events = []
 time_events = []
 
 for index, i in enumerate(addresses):
-
     location = geolocator.geocode(i)
-
     if location != None:
-
         valid_events.append(events[index])
-
         lats.append(location.latitude)
-
         longs.append(location.longitude)
-
         time_events.append(time[index])
 
 #create map object
