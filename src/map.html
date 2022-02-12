@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f77679d109f4819ac34ef8edc759fdd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1f77679d109f4819ac34ef8edc759fdd" ></div>
+        
+</body>
+<script>    
+    
+            var map_1f77679d109f4819ac34ef8edc759fdd = L.map(
+                "map_1f77679d109f4819ac34ef8edc759fdd",
+                {
+                    center: [43.0731, -89.4012],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_233312ee67c1463f814f23659d5ac8b9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var marker_d174f959c5554032a7cb8da465a500db = L.marker(
+                [43.18335, -89.212946],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_79e6b64de16c480ea71f75d6225cfae5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d174f959c5554032a7cb8da465a500db.setIcon(icon_79e6b64de16c480ea71f75d6225cfae5);
+        
+    
+        var popup_d479e565946c43beb380469dfd8c3ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_520b94d9971d43edac267fb786e38846 = $(`<div id="html_520b94d9971d43edac267fb786e38846" style="width: 100.0%; height: 100.0%;"><strong>Princess Tea Party and Boutique</strong><p>Tomorrow at 11:00 AM</p></div>`)[0];
+            popup_d479e565946c43beb380469dfd8c3ce5.setContent(html_520b94d9971d43edac267fb786e38846);
+        
+
+        marker_d174f959c5554032a7cb8da465a500db.bindPopup(popup_d479e565946c43beb380469dfd8c3ce5)
+        ;
+
+        
+    
+    
+            marker_d174f959c5554032a7cb8da465a500db.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c627c82fb96648ba8e0071d9c2fef4fe = L.marker(
+                [42.959910699999995, -89.43965468608498],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_0731f2c620d14a55aecb2d74a9cae3f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c627c82fb96648ba8e0071d9c2fef4fe.setIcon(icon_0731f2c620d14a55aecb2d74a9cae3f3);
+        
+    
+        var popup_0f71b9fbd7fa4a2894404d06fee8ab85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_773426cc8ade4e4993c80a595090c384 = $(`<div id="html_773426cc8ade4e4993c80a595090c384" style="width: 100.0%; height: 100.0%;"><strong>Valentine's Baking Session</strong><p>Tomorrow at 1:00 PM</p></div>`)[0];
+            popup_0f71b9fbd7fa4a2894404d06fee8ab85.setContent(html_773426cc8ade4e4993c80a595090c384);
+        
+
+        marker_c627c82fb96648ba8e0071d9c2fef4fe.bindPopup(popup_0f71b9fbd7fa4a2894404d06fee8ab85)
+        ;
+
+        
+    
+    
+            marker_c627c82fb96648ba8e0071d9c2fef4fe.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01056bfad0f54255bc127b8c1c87311c = L.marker(
+                [43.0741428, -89.3913601],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_a2e06c4aed4b454b8daaf1a2eb48ad8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01056bfad0f54255bc127b8c1c87311c.setIcon(icon_a2e06c4aed4b454b8daaf1a2eb48ad8c);
+        
+    
+        var popup_e6911dfb5fa34aeebf645ab94dc8acb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_795acbba6f27419a8cb7075580e78977 = $(`<div id="html_795acbba6f27419a8cb7075580e78977" style="width: 100.0%; height: 100.0%;"><strong>The 5th Annual Onesie Bar Crawl - Madison</strong><p>Today at 4:00 PM</p></div>`)[0];
+            popup_e6911dfb5fa34aeebf645ab94dc8acb9.setContent(html_795acbba6f27419a8cb7075580e78977);
+        
+
+        marker_01056bfad0f54255bc127b8c1c87311c.bindPopup(popup_e6911dfb5fa34aeebf645ab94dc8acb9)
+        ;
+
+        
+    
+    
+            marker_01056bfad0f54255bc127b8c1c87311c.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9230a9688d964859b5f61b702956c473 = L.marker(
+                [43.0867132, -89.2814075],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_72e2e4401f9649ac8feae6b32e6209da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9230a9688d964859b5f61b702956c473.setIcon(icon_72e2e4401f9649ac8feae6b32e6209da);
+        
+    
+        var popup_3347ea6c329449f482283f2c070eb27e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e6893a4e99a42eb9ec5043eeafeb8ef = $(`<div id="html_8e6893a4e99a42eb9ec5043eeafeb8ef" style="width: 100.0%; height: 100.0%;"><strong>Galentine's Day Drag Bingo</strong><p>Tomorrow at 1:00 PM</p></div>`)[0];
+            popup_3347ea6c329449f482283f2c070eb27e.setContent(html_8e6893a4e99a42eb9ec5043eeafeb8ef);
+        
+
+        marker_9230a9688d964859b5f61b702956c473.bindPopup(popup_3347ea6c329449f482283f2c070eb27e)
+        ;
+
+        
+    
+    
+            marker_9230a9688d964859b5f61b702956c473.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba7c307373324586ae880a6c33112fe5 = L.marker(
+                [43.037719100000004, -89.39558589570305],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_5a2b07ab51b240bebdfd9ff4746a43b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba7c307373324586ae880a6c33112fe5.setIcon(icon_5a2b07ab51b240bebdfd9ff4746a43b4);
+        
+    
+        var popup_6a76efb554574dfab13ea290319833cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a18ae7f22975473db02b880fbd82c84b = $(`<div id="html_a18ae7f22975473db02b880fbd82c84b" style="width: 100.0%; height: 100.0%;"><strong>FAFSA Workshop</strong><p>Today at 10:00 AM</p></div>`)[0];
+            popup_6a76efb554574dfab13ea290319833cc.setContent(html_a18ae7f22975473db02b880fbd82c84b);
+        
+
+        marker_ba7c307373324586ae880a6c33112fe5.bindPopup(popup_6a76efb554574dfab13ea290319833cc)
+        ;
+
+        
+    
+    
+            marker_ba7c307373324586ae880a6c33112fe5.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26d4277455064002b87490e6eaec2f8e = L.marker(
+                [43.037719100000004, -89.39558589570305],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_0223be8a058e4de4a5dc53c88826e07a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26d4277455064002b87490e6eaec2f8e.setIcon(icon_0223be8a058e4de4a5dc53c88826e07a);
+        
+    
+        var popup_801acd1eb9954d5c83488ac2f88b1ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f543be1bf984a229b7f06d19c56fbc2 = $(`<div id="html_7f543be1bf984a229b7f06d19c56fbc2" style="width: 100.0%; height: 100.0%;"><strong>Smart Start. Smarter Finish. Sessions 2021- 2022</strong><p>Today at 9:00 AM</p></div>`)[0];
+            popup_801acd1eb9954d5c83488ac2f88b1ac2.setContent(html_7f543be1bf984a229b7f06d19c56fbc2);
+        
+
+        marker_26d4277455064002b87490e6eaec2f8e.bindPopup(popup_801acd1eb9954d5c83488ac2f88b1ac2)
+        ;
+
+        
+    
+    
+            marker_26d4277455064002b87490e6eaec2f8e.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0977664fd43d4a8ebeb7ddebdee5ed27 = L.marker(
+                [43.120918042021074, -89.314790725003],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_dda82ed38e8d43b9be35d1441a266b9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0977664fd43d4a8ebeb7ddebdee5ed27.setIcon(icon_dda82ed38e8d43b9be35d1441a266b9f);
+        
+    
+        var popup_fdd5391b2f4145bf8771ef5473e98c26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0354b9b4e2b0459695acafd838a3c90f = $(`<div id="html_0354b9b4e2b0459695acafd838a3c90f" style="width: 100.0%; height: 100.0%;"><strong>Ecstatic Dance Madison</strong><p>Tomorrow at 1:30 PM</p></div>`)[0];
+            popup_fdd5391b2f4145bf8771ef5473e98c26.setContent(html_0354b9b4e2b0459695acafd838a3c90f);
+        
+
+        marker_0977664fd43d4a8ebeb7ddebdee5ed27.bindPopup(popup_fdd5391b2f4145bf8771ef5473e98c26)
+        ;
+
+        
+    
+    
+            marker_0977664fd43d4a8ebeb7ddebdee5ed27.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5036913f6ac448a8b44522650129e04 = L.marker(
+                [43.09262185, -89.33458799691616],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_566ac999df804695b2e53c470a38dbc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5036913f6ac448a8b44522650129e04.setIcon(icon_566ac999df804695b2e53c470a38dbc4);
+        
+    
+        var popup_77e351861cd44f9fa02cb506d8eca7b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f23e04ec9739409c8749e7be87758741 = $(`<div id="html_f23e04ec9739409c8749e7be87758741" style="width: 100.0%; height: 100.0%;"><strong>Fine Art and Craft Sale</strong><p>Today at 10:00 AM</p></div>`)[0];
+            popup_77e351861cd44f9fa02cb506d8eca7b4.setContent(html_f23e04ec9739409c8749e7be87758741);
+        
+
+        marker_c5036913f6ac448a8b44522650129e04.bindPopup(popup_77e351861cd44f9fa02cb506d8eca7b4)
+        ;
+
+        
+    
+    
+            marker_c5036913f6ac448a8b44522650129e04.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d14bd08bb58a410fb00a79aada9e4f91 = L.marker(
+                [43.07982815, -89.43066425429006],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_49e6929263ba4ee98e6626868a105b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d14bd08bb58a410fb00a79aada9e4f91.setIcon(icon_49e6929263ba4ee98e6626868a105b37);
+        
+    
+        var popup_ad0a53466c714ac58825816c1fd9a039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5294282ae5447398cda1cb2cc116848 = $(`<div id="html_e5294282ae5447398cda1cb2cc116848" style="width: 100.0%; height: 100.0%;"><strong>Improving Fertility Naturally - Free Workshop</strong><p>Today at 9:00 AM</p></div>`)[0];
+            popup_ad0a53466c714ac58825816c1fd9a039.setContent(html_e5294282ae5447398cda1cb2cc116848);
+        
+
+        marker_d14bd08bb58a410fb00a79aada9e4f91.bindPopup(popup_ad0a53466c714ac58825816c1fd9a039)
+        ;
+
+        
+    
+    
+            marker_d14bd08bb58a410fb00a79aada9e4f91.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d9140153fb42369709ac00a8f374f4 = L.marker(
+                [43.07982815, -89.43066425429006],
+                {}
+            ).addTo(map_1f77679d109f4819ac34ef8edc759fdd);
+        
+    
+            var icon_c87ba1ee1be24055928d6487888a4199 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56d9140153fb42369709ac00a8f374f4.setIcon(icon_c87ba1ee1be24055928d6487888a4199);
+        
+    
+        var popup_399203bade2a4afb9989776442bc79aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb68c0f501124b95a5a8f55c45ee2415 = $(`<div id="html_bb68c0f501124b95a5a8f55c45ee2415" style="width: 100.0%; height: 100.0%;"><strong>Beyond Breath - An Introduction to SKY Breath Meditation - Madison</strong><p>Today at 1:00 PM</p></div>`)[0];
+            popup_399203bade2a4afb9989776442bc79aa.setContent(html_bb68c0f501124b95a5a8f55c45ee2415);
+        
+
+        marker_56d9140153fb42369709ac00a8f374f4.bindPopup(popup_399203bade2a4afb9989776442bc79aa)
+        ;
+
+        
+    
+    
+            marker_56d9140153fb42369709ac00a8f374f4.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
