@@ -23,16 +23,15 @@ def get_scraped_content():
         content = title.text.strip()
         event_dict[title.text.strip()] = []
         title_list.append(content)
-    for location_num, location in enumerate(locations):
+    for index, location in enumerate(locations):
         content = location.text.strip().replace(' •', ',')
-        event_dict[title_list[location_num]].append(content)
-    for time_num, time in enumerate(times):
+        event_dict[title_list[index]].append(content)
+    for index, time in enumerate(times):
         content = time.text.strip()
-        event_dict[title_list[time_num]].append(content)
+        event_dict[title_list[index]].append(content)
 
     # Removes first and last index in event_dict
     for key, val in event_dict.items():
         event_dict[key].pop(0)
         event_dict[key].pop(len(val) - 1)
     return event_dict
-
