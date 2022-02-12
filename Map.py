@@ -1,11 +1,7 @@
 import folium
-
 from geopy.geocoders import Nominatim
-
 from bs4 import BeautifulSoup
-
 import requests
-
 import pandas as pd
 
 # Returns a dictionary in the form event:[place, time]
@@ -44,27 +40,16 @@ def get_scraped_content():
     return event_dict
 
 data = get_scraped_content()
-
 dataf = pd.DataFrame.from_dict(data)
-
 addresses = dataf.loc[0].tolist()
-
 events = dataf.columns.values.tolist()
-
 time = dataf.loc[1].tolist()
-
-#my_dataframe.columns.values.tolist()
-
-
 geolocator = Nominatim(user_agent= "specify_your_app_here")
-
 lats = []
-
 longs = []
-
 valid_events = []
-
 time_events = []
+
 for index, i in enumerate(addresses):
 
     location = geolocator.geocode(i)
@@ -79,30 +64,13 @@ for index, i in enumerate(addresses):
 
         time_events.append(time[index])
 
-#print(lats)
-
-#location = geolocator.geocode(addresses[0])
-
-#lats = location.latitude
-
-#longs = location.longitude
-
-#lat_5 = lats[:5]
-
-#long_5 = longs[:5]
-
-#print(events)
-
-#valid_5 = valid_events[:5]
-
 #create map object
 m = folium.Map(location=[43.0731, -89.4012], zoom_start = 12)
 
 #global tooltip
-
 tooltip = 'Click for more info'
-# create markers
 
+# create markers
 for i in range(len(valid_events)):
     folium.Marker([lats[i], longs[i]],
                   popup = f'<strong>{valid_events[i]}</strong>'
@@ -110,10 +78,5 @@ for i in range(len(valid_events)):
                   tooltip = tooltip,
                   icon = folium.Icon(icon = 'star')).add_to(m)
 
-#print(valid_events)
-
-#print(time)
-
 # Generate map
-
 m.save('map.html')
