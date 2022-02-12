@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 
+# Returns a dictionary in the form event:[place, time]
+
+
 def get_scraped_content():
     url = 'https://www.eventbrite.com/d/wi--madison/events--this-weekend/'
     request = requests.get(url)
@@ -30,7 +33,6 @@ def get_scraped_content():
     # Removes first and last index in event_dict
     for key, val in event_dict.items():
         event_dict[key].pop(0)
-        event_dict[key].pop(len(val)-1)
+        event_dict[key].pop(len(val) - 1)
     return event_dict
 
-print(get_scraped_content())
